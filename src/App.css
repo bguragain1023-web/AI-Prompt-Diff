@@ -1,0 +1,52 @@
+:root{
+  /* --bgbody : radial-gradient(rgba(0, 0, 0, 0.441),rgba(63, 4, 63, 0.512)); */
+  --bgbody: #010B13;
+
+  --text-light:rgba(217, 207, 207, 0.837);
+
+  --shadow: 0 0 0 1px rgba(0,212,255,0.15), 0 4px 24px rgba(0,212,255,0.08);
+}
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.wrapper{
+  background: var(--bgbody);
+}
+
+.navbar{
+  color:rgba(217, 207, 207, 0.837);
+  padding:1rem;
+  box-shadow: var(--shadow)
+
+
+}
+
+.links a {
+  color:var(--text-light);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.links a:hover{
+  color:white;
+  transform: scale(1.2);
+}
+.hero{
+  margin:10px;
+  color:var(--text-light)
+}
+
+.hero-content{
+  padding:20px;
+}
+
+.heading{
+  font-size: 4rem;
+}
+.hero-content span{
+  color:var(--text-light)
+
+}
