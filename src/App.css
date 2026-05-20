@@ -3,8 +3,10 @@
   --bgbody: #010B13;
 
   --text-light:rgba(217, 207, 207, 0.837);
+  --text-deemed: rgba(231, 225, 225, 0.336);
 
   --shadow: 0 0 0 1px rgba(0,212,255,0.15), 0 4px 24px rgba(0,212,255,0.08);
+  --border:1px solid rgba(0,212,255,0.15);
 }
 .indie-flower-regular {
   font-family: "Indie Flower", cursive;
@@ -15,7 +17,10 @@
 
 .wrapper{
   background: var(--bgbody);
+  min-height: 100vh;;
 }
+
+/* -----Navbar-------- */
 
 .navbar{
   color:rgba(217, 207, 207, 0.837);
@@ -34,6 +39,8 @@
   color:white;
   transform: scale(1.2);
 }
+
+/* ---------Hero--------- */
 .hero{
   margin:10px;
   color:var(--text-light)
@@ -49,4 +56,113 @@
 .hero-content span{
   color:var(--text-light)
 
+}
+
+
+/* ------Prompt-------- */
+
+
+.prompt{
+  padding:20px;
+}
+.prompt-title{
+  padding:10px;
+  color:var(--text-light);
+  border: var(--border);
+  font-size: 16px;;
+}
+.form-wrap{
+  position: relative;
+}
+.prompt-input-area{
+  width:100%;
+  height:250px;
+  background: transparent;
+  color:white;
+  border:none;
+  padding:20px 14px 10px;
+  outline:none;
+  resize:none;
+}
+.prompt-input-area:focus{
+ 
+   box-shadow: var(--shadow);
+}
+.form-wrap label{
+  position: absolute;
+  top:14px;
+  left: 14px;
+  color: var(--text-deemed);
+  font-size: 16px;
+  font-style: italic;
+  transition: all 0.2s ease;
+}
+
+.prompt-input-area:focus + label,
+.prompt-input-area:not(:placeholder-shown) + label{
+  top:4px;
+ font-size: 10px;
+
+}
+.prompt-1, .prompt-2{
+  width:45%;
+  border: var(--border);
+  border-radius: 0 0 20px 20px;
+}
+
+
+.vs{
+  text-shadow: 0 0 12px rgba(0,212,255,0.6);
+  font-size:2rem;
+  color:var(--text-light)
+}
+
+  
+.run-btn{
+
+  font-size:30px;
+ border:var(--border);
+ border-radius:20px 0;
+  background: rgba(0,212,255,0.15);
+  color:rgba(255, 255, 255, 0.379);
+  
+  transition: all .2s ease;
+  padding:10px;
+
+}
+.run-btn:hover{
+  color:white;
+  transform: scale(1.1);
+  box-shadow: var(--shadow);
+}
+.btn-status{
+  border:var(--border);
+  padding: 5px;
+  color:var(--text-deemed);
+  font-style: italic;
+  font-size: 14px;;
+}
+
+/* -------Compared---- */
+.compare-section{
+  padding:20px;
+}
+.response-container{
+
+  width:100%;
+  padding:20px;
+
+}
+.response-title{
+  border:var(--border);
+  padding:10px;
+}
+.response-box{
+border:var(--border);
+  height:250px;
+  border-radius:  0 0 20px 20px;
+}
+.emptyresponse{
+  color:var(--text-deemed);
+  font-style: italic;
 }
