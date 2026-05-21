@@ -125,16 +125,15 @@
  border-radius:20px 0;
   background: rgba(0,212,255,0.15);
   color:rgba(255, 255, 255, 0.379);
-  
   transition: all .2s ease;
   padding:10px;
 
 }
-.run-btn:hover{
+/* .run-btn:hover{
   color:white;
   transform: scale(1.1);
   box-shadow: var(--shadow);
-}
+} */
 .btn-status{
   border:var(--border);
   padding: 5px;
@@ -165,4 +164,35 @@ border:var(--border);
 .emptyresponse{
   color:var(--text-deemed);
   font-style: italic;
+}
+
+/* ---------Deatil---------- */
+.detail-container{
+  padding:20px;
+}
+.detail-box{
+  width:25% ;
+  border:var(--border);
+  height:150px;
+}
+.detail-title{
+padding:10px;
+border: var(--border);
+
+}
+
+.key-differences{
+  min-height:150px;
+
+}
+.key-title{
+  font-size:20px;
+  padding:20px;
+}
+
+.footer{
+  margin-top:30px;
+  padding:30px;
+  box-shadow: var(--shadow);
+  color:var(--text-light)
 }
