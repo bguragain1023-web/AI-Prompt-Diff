@@ -124,16 +124,23 @@
  border:var(--border);
  border-radius:20px 0;
   background: rgba(0,212,255,0.15);
-  color:rgba(255, 255, 255, 0.379);
   transition: all .2s ease;
   padding:10px;
+  color:var(--text-light);
 
 }
-/* .run-btn:hover{
-  color:white;
-  transform: scale(1.1);
+
+.run-btn:hover:not(:disabled){
+  transform: scale(1.05);
   box-shadow: var(--shadow);
-} */
+  
+} 
+
+.run-btn:disabled{
+  cursor: not-allowed;
+  background: transparent;
+  color:var(--text-deemed)
+}
 .btn-status{
   border:var(--border);
   padding: 5px;

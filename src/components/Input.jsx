@@ -1,4 +1,12 @@
-export const Input = () => {
+
+
+
+export const Input = ({promptA, promptB, setPromptA, setPromptB, loading, canRun, handleOnRun}) => {
+
+ 
+
+
+
   return (
     <>
       <div className="prompt-section d-flex justify-content-center align-items-center p-2 gap-3 ">
@@ -10,6 +18,8 @@ export const Input = () => {
               name="prompt-1"
               id="promptarea-1"
               placeholder=" "
+                value = {promptA}
+              onChange={(e)=>setPromptA(e.target.value)}
             ></textarea>
             <label htmlFor="promptarea-1">// Paste your prompt A here</label>
           </div>
@@ -23,6 +33,8 @@ export const Input = () => {
               name="prompt-2"
               id="promptarea-2"
               placeholder=" "
+              value = {promptB}
+              onChange={(e)=>setPromptB(e.target.value)}
             ></textarea>
             <label htmlFor="promptarea-2">// Paste your prompt B here</label>
           </div>
@@ -31,7 +43,7 @@ export const Input = () => {
       
       <div className="runbar d-flex align-items-center justify-content-center  m-2 gap-3 ">
         <div className="btn-status">Response using claude API</div>
-        <button type="button" className="run-btn indie-flower-regular" disabled>Run Comparision</button>
+        <button type="button" className="run-btn indie-flower-regular" disabled={!canRun || loading } onClick={handleOnRun} > {loading? "Analyzing" : "Run Comparision" }</button>
         <div className="btn-status mt-2 ">Enter ptompt to enable button</div>
       </div>
     </>

@@ -12,10 +12,7 @@ export const Detail = () => {
          <div className="detail-title indie-flower-regular text-success ">Clarity</div>
         <div className="result-box"></div>
       </div>
-      <div className="tone detail-box ">
-         <div className="detail-title indie-flower-regular text-warning">Tone</div>
-        <div className="result-box"></div>
-      </div>
+      
       <div className="focus detail-box ">
          <div className="detail-title indie-flower-regular text-danger">Focus</div>
         <div className="result-box"></div>
