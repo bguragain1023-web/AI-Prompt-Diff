@@ -1,6 +1,6 @@
 
 
-export const Compare = ({results, loading}) => {
+export const Compare = ({results}) => {
   return (
     <div className="compare-section d-flex g-2 justify-content-center align-items-center">
       <div className="response-container">

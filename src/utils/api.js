@@ -1,8 +1,33 @@
 
+const url = "http://localhost:3001/api/compare";
+
+export const fetchKeyDifferences = async(responseA, responseB)=>{
+
+    const prompt = `Here are two different prompts:
+    
+    promptA: ${responseA}
+    promptB: ${responseB} 
+    
+    List exactly 3 key differences between these two prompts.Be concise. format as :
+    1.....
+    2.....
+    3..... `;
+    
+    const response = await fetch(url, {
+        method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({prompt}),
+    })
+    const compareData = await response.json();
+    return compareData.content[0].text;
+}
+
 
 
 export const fetchFromClaude = async(prompt)=>{
-    const url = "http://localhost:3001/api/compare";
+    
 
 const response = await fetch (url,{
       method: "POST",
