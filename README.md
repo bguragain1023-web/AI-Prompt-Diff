@@ -10,7 +10,6 @@ A side-by-side AI prompt comparison tool that lets you see how differently Claud
 4. [Getting Started](#getting-started)
 5. [How to Use ](#how-to-use)
 6. [Metrics-explained](#metrics-explained)
-
 7. [Eniviroment Variables](#enviroments-variables)
 8. [Project Structure](#project-structure)
 9. [Author](#author)
@@ -160,9 +159,9 @@ AI-prompt-diff/
 
 **Brazesh Guragain**
 
-- GitHub: [@your-username](https://github.com/bguragain1023-web)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/brazesh-guragain-32a6661b0/)
-- Portfolio: [your-portfolio](https://brazeshguragain.com)
+- GitHub: [bguragain1023-web](https://github.com/bguragain1023-web)
+- LinkedIn: [brazesh-guragain-32a6661b0](https://linkedin.com/in/brazesh-guragain-32a6661b0/)
+- Portfolio: [Brazesh Guragain](https://brazeshguragain.com)
 
 ---
 
