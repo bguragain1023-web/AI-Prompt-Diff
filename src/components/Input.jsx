@@ -10,7 +10,7 @@ export const Input = ({
   return (
     <>
       <div className="prompt-section d-flex justify-content-center align-items-center p-2 gap-3 ">
-        <div className="prompt-1">
+        <div className="prompt">
           <div className="prompt-title  indie-flower-regular text-success">
             {" "}
             <i className="bi bi-card-text"></i> Prompt A
@@ -28,7 +28,7 @@ export const Input = ({
           </div>
         </div>
         <div className="vs indie-flower-regular ">VS</div>
-        <div className="prompt-2">
+        <div className="prompt">
           <div className="prompt-title indie-flower-regular text-warning">
             <i className="bi bi-card-text"></i> Prompt B
           </div>

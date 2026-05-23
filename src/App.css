@@ -61,9 +61,7 @@
 /* ------Prompt-------- */
 
 
-.prompt{
-  padding:20px;
-}
+
 .prompt-title{
   padding:10px;
   color:var(--text-light);
@@ -105,8 +103,8 @@
  font-size: 10px;
 
 }
-.prompt-1, .prompt-2{
-  width:45%;
+.prompt{
+  width:46%;
   border: var(--border);
   border-radius: 0 0 20px 20px;
 }
@@ -151,7 +149,7 @@
   padding: 5px;
   color:var(--text-deemed);
   font-style: italic;
-  font-size: 14px;;
+  font-size: 14px;
 }
 
 /* -------Compared---- */
@@ -169,7 +167,7 @@
   padding:10px;
 }
 .response-box{
-  background: var(--inputbg);
+background: var(--inputbg);
 border:var(--border);
   min-height:250px;
   max-height: 250px;
@@ -239,4 +237,57 @@ font-size:20px;
   padding:30px;
   box-shadow: var(--shadow);
   color:var(--text-light)
+}
+
+@media (max-width:768px) {
+
+  .heading {
+    font-size:1.7rem;
+  }
+  .desc{
+    font-size: 10px;
+    color:var(--text-light);
+  }
+
+  .vs{
+    font-size:1rem
+  }
+
+  .response-container{
+  width:100%;
+  padding:5px;
+
+}
+
+.run-btn{
+  font-size:1rem;
+  padding:8px;
+}
+
+.btn-status{
+  
+  padding: 5px;
+  color:var(--text-deemed);
+  font-style: italic;
+  font-size: 10px;
+}
+.response-title{
+font-size: 14px;;
+}
+.token{
+  font-size: 13px;;
+}
+.detail-container{
+  display: flex;
+  flex-direction:column;
+ 
+}
+
+.detail-box{
+  width:100%;
+}
+.diff-item{
+  font-size:14px;
+}
+  
 }

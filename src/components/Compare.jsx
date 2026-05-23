@@ -3,7 +3,7 @@ export const Compare = ({ results }) => {
     <div className="compare-section d-flex g-2 justify-content-center align-items-center">
       <div className="response-container">
         <div className="response-title   d-flex justify-content-between">
-          <span className="text-success">
+          <span className="text-success indie-flower-regular">
             <i className="bi bi-card-text"></i> Response A
           </span>
           <span className="token">{results?.a.token}-token</span>
@@ -17,9 +17,9 @@ export const Compare = ({ results }) => {
         </div>
       </div>
       <div className="response-container">
-        <div className="response-title  indie-flower-regular d-flex justify-content-between">
-          <span className="text-warning">
-            <i className="bi bi-card-text"></i> Response B
+        <div className="response-title   d-flex justify-content-between">
+          <span className="text-warning indie-flower-regular">
+            <i className="bi bi-card-text  "></i> Response B
           </span>
           <span className="token">{results?.b.token}-token</span>
         </div>
