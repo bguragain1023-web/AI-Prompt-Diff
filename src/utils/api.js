@@ -1,5 +1,7 @@
 
-const url = "http://localhost:3001/api/compare";
+const url = process.env.NODE_ENV === "production" 
+  ? "/api/compare" 
+  : "http://localhost:3001/api/compare";
 
 export const fetchKeyDifferences = async(responseA, responseB)=>{
 
