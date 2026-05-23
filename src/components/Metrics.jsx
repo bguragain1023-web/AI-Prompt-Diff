@@ -4,14 +4,14 @@ export const Metrics = ({ valueA, valueB, isSpeed }) => {
   return (
     <div className="metric-bars">
       <div className="bar-row">
-        <span className="bar-tag text-success"> REsponse A</span>
+        <span className="bar-tag text-success"> Response A</span>
         <div className="bar-track">
           <div
             className="bar-fill bg-success"
             style={{ width: `${barWidthA}%` }}
           />
         </div>
-        <span className="bar-val">{valueA}ms</span>
+        <span className="bar-val">{isSpeed ? `${valueA}ms` : valueA}</span>
       </div>
       <div className="bar-row">
         <span className="bar-tag text-warning"> Response B</span>
@@ -21,7 +21,7 @@ export const Metrics = ({ valueA, valueB, isSpeed }) => {
             style={{ width: `${barWidthB}%` }}
           />
         </div>
-        <span className="bar-val">{valueB}ms</span>
+        <span className="bar-val">{isSpeed ? `${valueB}ms` : valueB}</span>
       </div>
     </div>
   );

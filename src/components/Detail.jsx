@@ -28,7 +28,7 @@ export const Detail = ({ metrics, differences }) => {
         </div>
         <div className="focus detail-box ">
           <div className="detail-title indie-flower-regular text-danger">
-            Speed
+            Response time
           </div>
           <div className="result-box">
             <Metrics
@@ -40,11 +40,19 @@ export const Detail = ({ metrics, differences }) => {
         </div>
       </div>
 
-      <div className="key-differences container">
+      <div className="key-differences ">
         <div className="key-title text-info indie-flower-regular">
           Key Differences:
-          <div className="diffcontent">{differences}</div>
         </div>
+        {differences &&
+          differences
+            .split("\n")
+            .filter(Boolean)
+            .map((line, i) => (
+              <div key={i} className="diff-item container">
+                {line}
+              </div>
+            ))}
       </div>
     </>
   );

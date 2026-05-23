@@ -35,4 +35,3 @@ console.log(data)
 })
 
 app.listen(3001,()=>console.log('server is running on port 3001'))
-console.log('API KEY:', process.env.ANTHROPIC_API_KEY)

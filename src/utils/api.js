@@ -3,12 +3,12 @@ const url = "http://localhost:3001/api/compare";
 
 export const fetchKeyDifferences = async(responseA, responseB)=>{
 
-    const prompt = `Here are two different prompts:
+    const prompt = `Here are two different responses:
     
-    promptA: ${responseA}
-    promptB: ${responseB} 
+    Response A : ${responseA}
+    Response B: ${responseB} 
     
-    List exactly 3 key differences between these two prompts.Be concise. format as :
+    List exactly 3 key differences between these two responses.Be concise. format as :
     1.....
     2.....
     3..... `;
