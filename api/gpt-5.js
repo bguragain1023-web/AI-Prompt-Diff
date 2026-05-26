@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     body: JSON.stringify({
         model:"gpt-5-nano",
     input:prompt,
-     max_output_tokens: 2000,
+     
     }),
   });
 

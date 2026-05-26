@@ -31,7 +31,7 @@ app.post ('/api/compare', async(req, res)=>{
    
 const data = await response.json();
 res.json(data);
-console.log(data)
+
 
 })
 
@@ -47,7 +47,7 @@ app.post ('/api/gpt-5', async (req,res)=>{
   body : JSON.stringify({
     model:"gpt-5-nano",
     input:prompt,
-     max_output_tokens: 1000,
+    
   })
 
 })
