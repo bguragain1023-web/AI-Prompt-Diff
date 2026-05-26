@@ -5,9 +5,7 @@ export const Detail = ({ metrics, differences }) => {
     <>
       <div className="detail-container d-flex justify-content-center align-items-center">
         <div className="length detail-box">
-          <div className="detail-title indie-flower-regular text-info">
-            Length
-          </div>
+          <div className="detail-title text-info ">Length</div>
           <div className="result-box">
             <Metrics
               valueA={metrics?.a.length ?? 0}
@@ -16,9 +14,7 @@ export const Detail = ({ metrics, differences }) => {
           </div>
         </div>
         <div className="clarity detail-box ">
-          <div className="detail-title indie-flower-regular text-success ">
-            Clarity
-          </div>
+          <div className="detail-title  text-success ">Clarity</div>
           <div className="result-box">
             <Metrics
               valueA={metrics?.a.clarity ?? 0}
@@ -27,9 +23,7 @@ export const Detail = ({ metrics, differences }) => {
           </div>
         </div>
         <div className="focus detail-box ">
-          <div className="detail-title indie-flower-regular text-danger">
-            Response time
-          </div>
+          <div className="detail-title text-danger">Response time</div>
           <div className="result-box">
             <Metrics
               valueA={metrics?.a.speed ?? 0}
@@ -41,9 +35,7 @@ export const Detail = ({ metrics, differences }) => {
       </div>
 
       <div className="key-differences ">
-        <div className="key-title text-info indie-flower-regular">
-          Key Differences:
-        </div>
+        <div className="key-title text-info ">Key Differences:</div>
         {differences &&
           differences
             .split("\n")
