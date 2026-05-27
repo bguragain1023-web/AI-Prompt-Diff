@@ -229,13 +229,12 @@ border:var(--border);
   font-size:20px;
   color:var(--text-light);
   font-style: italic;
-
+   background: var(--inputbg);
   padding:20px;
   border-radius: 20px;;
 }
 
 .history-box{
-   background: var(--inputbg);
  color: var(--text-deemed);
   padding:10px;
   font-style: italic;

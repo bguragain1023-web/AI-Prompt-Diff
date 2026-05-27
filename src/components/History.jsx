@@ -3,7 +3,7 @@ export const History = ({ history }) => {
   return (
     <>
       <div className="">
-        <span className="history-title text-info">Prompt History</span>
+        <div className="history-title text-info">Prompt History</div>
         <div className="history-box container">
           {history.map((item, i) => (
             <li key={i} className="list-unstyled list-edit">

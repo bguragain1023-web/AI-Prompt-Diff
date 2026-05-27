@@ -17,17 +17,17 @@ A side-by-side AI prompt comparison tool that lets you see how differently Claud
 
 ## Screenshots
 
-![User Prompt Screenshot](src/assets/prompt.PNG)
-![AI Response Screenshot](src/assets/response.PNG)
+![Screenshot](src/assets/updated.PNG)
 
 ---
 
 ## Features
 
-- **Side-by-side comparison** — run two prompts simultaneously and see both responses
-- **Metrics analysis** — compare Length, Clarity, and Response Speed for each prompt
+- **Side-by-side comparison** — send one prompt to both Claude Sonnet and GPT-5 Nano simultaneously
+- **Metrics analysis** — compare Length, Clarity, and Response Speed for each model
 - **Key Differences** — AI-generated summary of the 3 main differences between responses
-- **Token count** — see how many tokens each response used
+- **Token count** — see how many tokens each model used per response
+- **Prompt History** — track all prompts tested in the current session
 - **Clean dark UI** — built with a dark theme for readability
 
 ---
@@ -45,6 +45,7 @@ A side-by-side AI prompt comparison tool that lets you see how differently Claud
 - Node.js
 - Express
 - Anthropic API (Claude Sonnet 4.5)
+- Gpt -5 Nano API (open AI)
 
 ---
 
@@ -55,6 +56,7 @@ A side-by-side AI prompt comparison tool that lets you see how differently Claud
 - Node.js v20+
 - Yarn
 - Anthropic API key — [get one here](https://console.anthropic.com)
+- OpenAI API key -[get one here](https://platform.openai.com/api-keys)
 
 ### Installation
 
@@ -75,6 +77,7 @@ yarn
 
 ```
 ANTHROPIC_API_KEY=your_api_key_here
+OPENAI_API_KEY=your_api_key_here
 ```
 
 4. Start the Express server
@@ -95,11 +98,10 @@ yarn dev
 
 ## How to Use
 
-1. Type or paste a prompt in the **Prompt A** box
-2. Type or paste a different prompt in the **Prompt B** box
-3. Click **Run Comparison**
-4. View both responses side by side
-5. Check the metrics and key differences below
+1. Type or paste a prompt in the **Prompt** box
+2. Click **Run Comparison**
+3. View both responses side by side with different AI model
+4. Check the metrics and key differences below
 
 ---
 
@@ -118,6 +120,7 @@ yarn dev
 | Variable            | Description            |
 | ------------------- | ---------------------- |
 | `ANTHROPIC_API_KEY` | Your Anthropic API key |
+| `OPENAI_API_KEY`    | Your OpenAI API key    |
 
 ---
 
@@ -125,9 +128,11 @@ yarn dev
 
 ```
 AI-prompt-diff/
-.
+..
 ├── README.md
-├── eslint.config.js
+├── api
+│   ├── compare.js
+│   └── gpt-5.js
 ├── index.html
 ├── package.json
 ├── public
@@ -136,11 +141,14 @@ AI-prompt-diff/
 │   ├── App.css
 │   ├── App.jsx
 │   ├── assets
+│   │   ├── prompt.PNG
+│   │   └── response.PNG
 │   ├── components
 │   │   ├── Compare.jsx
 │   │   ├── Detail.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Hero.jsx
+│   │   ├── History.jsx
 │   │   ├── Input.jsx
 │   │   ├── Metrics.jsx
 │   │   └── Navbar.jsx
@@ -149,8 +157,6 @@ AI-prompt-diff/
 │   └── utils
 │       ├── api.js
 │       └── metric.js
-├── vite.config.js
-└── yarn.lock
 ```
 
 ---

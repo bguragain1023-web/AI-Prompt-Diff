@@ -11,7 +11,7 @@ export const Input = ({
         <div className="prompt">
           <div className="prompt-title   text-success">
             {" "}
-            <i className="bi bi-card-text"></i> Prompt A
+            <i className="bi bi-card-text"></i> Prompt
           </div>
           <div className="form-wrap">
             <textarea
