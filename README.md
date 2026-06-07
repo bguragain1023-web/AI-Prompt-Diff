@@ -1,6 +1,6 @@
 # AI Prompt Diff
 
-A side-by-side AI prompt comparison tool that lets you see how differently Claude responds to two prompts. Compare responses, analyse metrics, and understand what makes a prompt more effective.
+One prompt. Two AI models. Side-by-side comparison with metrics, key differences and session history. Built to understand how Claude and GPT respond differently to the same input.
 
 ## Table of contents
 
